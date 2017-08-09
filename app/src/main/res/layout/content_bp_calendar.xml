@@ -7,9 +7,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.solutions.medadhere.medadheresolutionsapp.WeightCalendarActivity"
-    tools:showIn="@layout/app_bar_weight_calendar"
+    tools:context=".BPCalendarActivity"
+    tools:showIn="@layout/app_bar_blood_pressure"
     android:weightSum="1">
+
+    <TextView
+        android:id="@+id/bp_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="My Blood Pressure Goal: "
+        android:layout_marginBottom="20dp"/>
 
 <ScrollView
     android:layout_width="match_parent"
@@ -22,7 +30,7 @@
 
 
         <CalendarView
-            android:id="@+id/calendarWeight"
+            android:id="@+id/calendarBP"
             android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="300dp"
@@ -36,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
-            android:text="Click on a date from the calendar above to record today's weight or view a previous entry. " />
+            android:text="Click on a date from the calendar above to record today's weight or view a previous entry." />
 
     </LinearLayout>
 </ScrollView>
